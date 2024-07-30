@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Portfolio",
 };
 
-const MainLayout = ({children}) => {
+const Layout = ({children}) => {
     return (
         <html lang="en">
         <body className={inter.className}>{children}</body>
@@ -17,4 +17,4 @@ const MainLayout = ({children}) => {
     );
 };
 
-export default MainLayout;
+export default Layout;
