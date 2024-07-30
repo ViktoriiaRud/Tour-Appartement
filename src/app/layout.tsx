@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const MainLayout = ({children}) => {
+export default function RootLayout({
+                                       children,
+                                   }: {
+    children: React.ReactNode
+}) {
     return (
-        <html lang={'en'}>
-        <div>
-            {children}
-        </div>
+        <html lang="en">
+        <body>{children}</body>
         </html>
-
-    );
-};
-
-export default MainLayout;
+    )
+}
