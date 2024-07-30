@@ -1,14 +1,14 @@
 import React from 'react';
-import '@/app/ui/global.css';
 
-export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode;
-}) {
+const MainLayout = ({children}) => {
     return (
-        <html lang="en">
-        <body>{children}</body>
+        <html lang={'en'}>
+        <div>
+            {children}
+        </div>
         </html>
+
     );
-}
+};
+
+export default MainLayout;
