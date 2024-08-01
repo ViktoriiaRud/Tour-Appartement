@@ -1,6 +1,6 @@
 import React from 'react';
 export const metadata = {
-    title: 'apartment'
+    title: 'tour-apartment',
 }
 const HomePage = () => {
     return (
