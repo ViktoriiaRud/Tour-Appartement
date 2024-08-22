@@ -1,14 +1,14 @@
 import React from 'react';
-import Link from "next/link";
-export const metadata = {
-    title: 'tour-apartment',
-}
+import Hero from '@/components/Hero';
+import Boxes from '@/components/Boxes';
+
+
 const HomePage = () => {
     return (
-        <div>
-            <h1 className={'text-3xl'}>Welcome</h1>
-            <Link href="/properties">Show properties</Link>
-        </div>
+        <>
+           <Hero/>
+           <Boxes/>
+        </>
     );
 };
 

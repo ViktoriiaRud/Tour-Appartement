@@ -15,7 +15,7 @@ const Navbar = () => {
     const pathname = usePathname();
 
     return (
-    <nav className='bg-orange-700 border-b border-green-800'>
+    <nav className='bg-rose-800 border-b border-rose-950'>
       <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
         <div className='relative flex h-20 items-center justify-between'>
           <div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
