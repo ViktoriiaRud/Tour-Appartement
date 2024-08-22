@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 
 const PropertySearchForm = () => {
@@ -8,7 +8,7 @@ const PropertySearchForm = () => {
 
   const router = useRouter();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (location === '' && propertyType === 'All') {
@@ -35,7 +35,7 @@ const PropertySearchForm = () => {
           placeholder='Enter Keywords or Location'
           className='w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring focus:ring-rose-900'
           value={location}
-          onChange={(e) => setLocation(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setLocation(e.target.value)}
         />
       </div>
       <div className='w-full md:w-2/5 md:pl-2'>
@@ -46,7 +46,7 @@ const PropertySearchForm = () => {
           id='property-type'
           className='w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring focus:ring-rose-900'
           value={propertyType}
-          onChange={(e) => setPropertyType(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setPropertyType(e.target.value)}
         >
           <option value='All'>All</option>
           <option value='Apartment'>Apartment</option>
