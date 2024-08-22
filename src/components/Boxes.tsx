@@ -1,6 +1,7 @@
+import React from 'react';
 import Box from './Box';
 
-const Boxes = () => {
+const Boxes: React.FC = () => {
   return (
     <section>
       <div className='container-xl lg:container m-auto'>
@@ -34,4 +35,5 @@ const Boxes = () => {
     </section>
   );
 };
+
 export default Boxes;
