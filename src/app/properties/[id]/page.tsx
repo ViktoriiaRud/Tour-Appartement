@@ -1,10 +1,11 @@
 import React from 'react';
 
+
+
 const PropertyPage = () => {
     return (
-        <div>
-            PropertyPage
-        </div>
+        <section >
+        </section>
     );
 };
 
