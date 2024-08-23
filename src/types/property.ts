@@ -2,7 +2,7 @@ export interface Location {
     street: string;
     city: string;
     state: string;
-    zipCode: string;
+    zipcode: string;
   }
 
   export interface Rates {
