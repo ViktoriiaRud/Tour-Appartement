@@ -1,9 +1,7 @@
 import React from 'react';
 import properties from "@/properties.json";
-
-interface Property {
-    name: string;
-}
+import PropertyCard from '@/components/PropertyCard';
+import { Property } from '@/types/property';
 
 const PropertiesPage: React.FC = () => {
     return (
@@ -13,10 +11,10 @@ const PropertiesPage: React.FC = () => {
                     <p>No properties found</p>
                 ) : (
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-                    {properties.map((property: Property, index: number) => (
-                        <div key={index}>{property.name}</div>
-                    ))}
-                </div>
+                        {properties.map((property: Property) => (
+                            <PropertyCard key={property._id} property={property} />
+                        ))}
+                    </div>
                 )}
             </div>
         </div>
